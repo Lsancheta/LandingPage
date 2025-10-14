@@ -11,15 +11,20 @@
     src: url(src/font/exo/Exo-Regular.otf);
 }
 body{
-    background-color: #F7D9BC;
+    background-color: #16364d;
     display:grid;
-    font-family: exo-download;;
+    font-family: exo-download;
+    text-decoration: #fff;
+}
+body h1, h2, h3, h4, p {
+    color: #fff;
 }
 .headline{
     font-family: roboto-download;
     display:flex;
     font-size: 30px;
     text-align: left;
+    text-transform: uppercase;
 }
 .preciso{
     font-family: exo-download2;
@@ -27,8 +32,22 @@ body{
     text-align: center;
     font-size: 20px;
 }
-
-
+.preciso-container{
+    display: flex;
+}
+.about-content{
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.about{
+    display: inline-flex;
+}
+.copy-content{
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+}
 .copywrite{
     display:flex;
     
@@ -42,7 +61,7 @@ height: 10px;
 }
 .copy{
 
-    background-color: #CDB39C;
+    background-color: #122B3E;
     margin: 1%;
     padding: 1%;
     font-size: 25px;
@@ -66,7 +85,7 @@ height: 10px;
 }
 
 .button-cta {
-  background-color: #657868;
+  background-color: #fc0202;
   color: #fff !important;
 }
 
@@ -75,12 +94,14 @@ height: 10px;
 }
 
  footer {
-      text-align: center;
-      background: #F7D9BC;
-      padding: 15px;
-      font-size: 0.9rem;
-      color: #555;
-    }
+    position: static;
+    bottom: 0;
+    text-align: center;
+    background: #16364d;
+    padding: 15px;
+    font-size: 0.9rem;
+    color: #fff;
+}
 
 /* ============================= */
 /* ======= RESPONSIVIDADE ======= */
@@ -140,10 +161,12 @@ height: 10px;
   margin: 50px auto;
   text-align: center;
   font-size: 20px;
+  
 }
 
 .preciso details {
-  background: #CDB39C;
+  background: #122B3E;
+  color:#fff;
   border-radius: 15px;
   padding: 20px 25px;
   text-align: left;
@@ -166,7 +189,7 @@ height: 10px;
 }
 
 .preciso summary::after {
-  content: "▼";
+  content: " ▼";
   font-size: 18px;
   position: absolute;
   right: 0;
@@ -182,7 +205,7 @@ height: 10px;
   font-size: 20px;
   margin-top: 15px;
   line-height: 1.6;
-  color: #222;
+  color: #fff;
 }
 
 /* Animação suave ao abrir */
@@ -200,4 +223,3 @@ height: 10px;
     transform: translateY(0);
   }
 }
-
