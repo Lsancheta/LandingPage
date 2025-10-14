@@ -1,17 +1,33 @@
+@font-face {
+    font-family:exo-download ;
+    src: url(src/font/exo/Exo-Light.otf);
+}
+@font-face {
+    font-family:roboto-download ;
+    src: url(src/font/roboto/RobotoCondensed-Regular.ttf);
+}
+@font-face {
+    font-family:exo-download2 ;
+    src: url(src/font/exo/Exo-Regular.otf);
+}
 body{
     background-color: #F7D9BC;
     display:grid;
+    font-family: exo-download;;
 }
 .headline{
+    font-family: roboto-download;
     display:flex;
     font-size: 30px;
     text-align: left;
 }
 .preciso{
+    font-family: exo-download2;
     padding:50px;
     text-align: center;
     font-size: 20px;
 }
+
 
 .copywrite{
     display:flex;
@@ -184,3 +200,4 @@ height: 10px;
     transform: translateY(0);
   }
 }
+
